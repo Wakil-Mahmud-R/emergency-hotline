@@ -35,7 +35,7 @@
                 </button >
 
                 <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-[#00A63E]">
-                    <h1><span>0</span> Copy</h1>
+                    <h1><span id="copyCount">0</span> Copy</h1>
                 </button>
             </div>
         </div>
@@ -57,322 +57,38 @@
 
     <section class="bg-[#F5FFF6]">
         <div class="py-10 px-3 lg:px-10 grid grid-cols-1 lg:grid-cols-4 place-items-center">
-            <div class="col-span-1 grid grid-cols-1 lg:col-span-3 lg:grid lg:grid-cols-3 gap-4">
+            <div id="cardContainer" class="col-span-1 grid grid-cols-1 lg:col-span-3 lg:grid lg:grid-cols-3 gap-4">
                 <!-- card holder -->
 
 
+
                 <!-- one card starts here -->
-                <div class="w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
+                <div class="a-card w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
 
                     <div class="flex justify-between">
                         <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
-
-                        <img src="assets/card-heart.svg" alt="">
-                    </div>
-
-
-                    <div class="mt-8">
-                        <h1 class="text-l font-bold">National Emergency Number</h1>
-                        <p>National Emergency</p>
-
-                        <h1 class="mt-4 text-3xl font-bold">999</h1>
-
-                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">All</button>
-                    </div>
-
-                    <div class="flex justify-between items-center mt-4">
-                        <button class="flex bg-gray-100 px-8 py-2 rounded-lg">
-                            <img src="assets/copy.svg" alt="">
-                            <span>Copy</span>
-                        </button>
-
-                        <button class="flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>Call</span>
-                        </button>
-                    </div>
-
-                </div>
-                <!-- one card ends here -->
-
-
-                <!-- one card starts here -->
-                <div class="w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
-
-                    <div class="flex justify-between">
-                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
-
-                        <img src="assets/card-heart.svg" alt="">
-                    </div>
-
-
-                    <div class="mt-8">
-                        <h1 class="text-l font-bold">Police Helpline Number</h1>
-                        <p>Police</p>
-
-                        <h1 class="mt-4 text-3xl font-bold">999</h1>
-
-                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Police</button>
-                    </div>
-
-                    <div class="flex justify-between items-center mt-4">
-                        <button class="flex bg-gray-100 px-8 py-2 rounded-lg">
-                            <img src="assets/copy.svg" alt="">
-                            <span>Copy</span>
-                        </button>
-
-                        <button class="flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>Call</span>
-                        </button>
-                    </div>
-
-                </div>
-                <!-- one card ends here -->
-
-
-
-                <!-- one card starts here -->
-                <div class="w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
-
-                    <div class="flex justify-between">
-                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
-
-                        <img src="assets/card-heart.svg" alt="">
-                    </div>
-
-
-                    <div class="mt-8">
-                        <h1 class="text-l font-bold">Fire Service Number</h1>
-                        <p>Fire Service</p>
-
-                        <h1 class="mt-4 text-3xl font-bold">999</h1>
-
-                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Fire</button>
-                    </div>
-
-                    <div class="flex justify-between items-center mt-4">
-                        <button class="flex bg-gray-100 px-8 py-2 rounded-lg">
-                            <img src="assets/copy.svg" alt="">
-                            <span>Copy</span>
-                        </button>
-
-                        <button class="flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>Call</span>
-                        </button>
-                    </div>
-
-                </div>
-                <!-- one card ends here -->
-
-
-
-                <!-- one card starts here -->
-                <div class="w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
-
-                    <div class="flex justify-between">
-                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
-
-                        <img src="assets/card-heart.svg" alt="">
-                    </div>
-
-
-                    <div class="mt-8">
-                        <h1 class="text-l font-bold">Ambulance Service</h1>
-                        <p>Ambulance</p>
-
-                        <h1 class="mt-4 text-3xl font-bold">1994-999999</h1>
-
-                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Health</button>
-                    </div>
-
-                    <div class="flex justify-between items-center mt-4">
-                        <button class="flex bg-gray-100 px-8 py-2 rounded-lg">
-                            <img src="assets/copy.svg" alt="">
-                            <span>Copy</span>
-                        </button>
-
-                        <button class="flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>Call</span>
-                        </button>
-                    </div>
-
-                </div>
-                <!-- one card ends here -->
-
-
-
-                <!-- one card starts here -->
-                <div class="w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
-
-                    <div class="flex justify-between">
-                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
-
-                        <img src="assets/card-heart.svg" alt="">
-                    </div>
-
-
-                    <div class="mt-8">
-                        <h1 class="text-l font-bold">Women & Child Helpline</h1>
-                        <p>Women & Child Helpline</p>
-
-                        <h1 class="mt-4 text-3xl font-bold">109</h1>
-
-                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Help</button>
-                    </div>
-
-                    <div class="flex justify-between items-center mt-4">
-                        <button class="flex bg-gray-100 px-8 py-2 rounded-lg">
-                            <img src="assets/copy.svg" alt="">
-                            <span>Copy</span>
-                        </button>
-
-                        <button class="flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>Call</span>
-                        </button>
-                    </div>
-
-                </div>
-                <!-- one card ends here -->
-
-
-
-                <!-- one card starts here -->
-                <div class="w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
-
-                    <div class="flex justify-between">
-                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
-
-                        <img src="assets/card-heart.svg" alt="">
-                    </div>
-
-
-                    <div class="mt-8">
-                        <h1 class="text-l font-bold">Anti-Corruption Helpline</h1>
-                        <p>Anti-Corruption</p>
-
-                        <h1 class="mt-4 text-3xl font-bold">106</h1>
-
-                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Govt.</button>
-                    </div>
-
-                    <div class="flex justify-between items-center mt-4">
-                        <button class="flex bg-gray-100 px-8 py-2 rounded-lg">
-                            <img src="assets/copy.svg" alt="">
-                            <span>Copy</span>
-                        </button>
-
-                        <button class="flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>Call</span>
-                        </button>
-                    </div>
-
-                </div>
-                <!-- one card ends here -->
-
-
-                <!-- one card starts here -->
-                <div class="w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
-
-                    <div class="flex justify-between">
-                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
-
-                        <img src="assets/card-heart.svg" alt="">
-                    </div>
-
-
-                    <div class="mt-8">
-                        <h1 class="text-l font-bold">Electricity Helpline</h1>
-                        <p>Electricity Outage</p>
-
-                        <h1 class="mt-4 text-3xl font-bold">16216</h1>
-
-                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Electircity</button>
-                    </div>
-
-                    <div class="flex justify-between items-center mt-4">
-                        <button class="flex bg-gray-100 px-8 py-2 rounded-lg">
-                            <img src="assets/copy.svg" alt="">
-                            <span>Copy</span>
-                        </button>
-
-                        <button class="flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>Call</span>
-                        </button>
-                    </div>
-
-                </div>
-                <!-- one card ends here -->
-
-
-
-                <!-- one card starts here -->
-                <div class="w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
-
-                    <div class="flex justify-between">
-                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
-
-                        <img src="assets/card-heart.svg" alt="">
-                    </div>
-
-
-                    <div class="mt-8">
-                        <h1 class="text-l font-bold">Brac Helpline</h1>
-                        <p>Brac</p>
-
-                        <h1 class="mt-4 text-3xl font-bold">16445</h1>
-
-                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">NGO</button>
-                    </div>
-
-                    <div class="flex justify-between items-center mt-4">
-                        <button class="flex bg-gray-100 px-8 py-2 rounded-lg">
-                            <img src="assets/copy.svg" alt="">
-                            <span>Copy</span>
-                        </button>
-
-                        <button class="flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>Call</span>
-                        </button>
-                    </div>
-
-                </div>
-                <!-- one card ends here -->
-
-
-                <!-- one card starts here -->
-                <div class="w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
-
-                    <div class="flex justify-between">
-                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
-                        <div id="heartBtn" class="cursor-pointer">
+                        <div class="heartBtn cursor-pointer">
                             <img  src="assets/card-heart.svg" alt="">
                         </div>
                     </div>
 
 
                     <div class="mt-8">
-                        <h1 id="headline" class="text-l font-bold">Bangladesh Railway Helpline</h1>
+                        <h1 class="headline text-l font-bold">Bangladesh Railway Helpline</h1>
                         <p>Bangladesh Railway</p>
 
-                        <h1 id="num" class="mt-4 text-3xl font-bold">163</h1>
+                        <h1 class="num mt-4 text-3xl font-bold">163</h1>
 
                         <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Travel</button>
                     </div>
 
                     <div class="flex justify-between items-center mt-4 ">
-                        <button class="flex bg-gray-100 px-8 py-2 rounded-lg">
+                        <button class="copyBtn cursor-pointer flex bg-gray-100 px-8 py-2 rounded-lg">
                             <img src="assets/copy.svg" alt="">
-                            <span>Copy</span>
+                            <span class="">Copy</span>
                         </button>
 
-                        <button id="callBtn" class="flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500">
+                        <button class="callBtn flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500 cursor-pointer">
                             <i class="fa-solid fa-phone"></i>
                             <span>Call</span>
                         </button>
@@ -381,6 +97,293 @@
                 </div>
                 <!-- one card ends here -->
 
+                <!-- one card starts here -->
+                <div class="a-card w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
+
+                    <div class="flex justify-between">
+                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
+                        <div class="heartBtn cursor-pointer">
+                            <img  src="assets/card-heart.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="mt-8">
+                        <h1 class="headline text-l font-bold">UK Railway COUNTER</h1>
+                        <p>Bangladesh Railway</p>
+
+                        <h1 class="num mt-4 text-3xl font-bold">887</h1>
+
+                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Travel</button>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-4 ">
+                        <button class="copyBtn cursor-pointer flex bg-gray-100 px-8 py-2 rounded-lg">
+                            <img src="assets/copy.svg" alt="">
+                            <span class="">Copy</span>
+                        </button>
+
+                        <button class="callBtn flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500 cursor-pointer">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- one card ends here -->
+
+
+                <!-- one card starts here -->
+                <div class="a-card w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
+
+                    <div class="flex justify-between">
+                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
+                        <div class="heartBtn cursor-pointer">
+                            <img  src="assets/card-heart.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="mt-8">
+                        <h1 class="headline text-l font-bold">UK Railway COUNTER</h1>
+                        <p>Bangladesh Railway</p>
+
+                        <h1 class="num mt-4 text-3xl font-bold">887</h1>
+
+                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Travel</button>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-4 ">
+                        <button class="copyBtn cursor-pointer flex bg-gray-100 px-8 py-2 rounded-lg">
+                            <img src="assets/copy.svg" alt="">
+                            <span class="">Copy</span>
+                        </button>
+
+                        <button class="callBtn flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500 cursor-pointer">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- one card ends here -->
+
+
+                <!-- one card starts here -->
+                <div class="a-card w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
+
+                    <div class="flex justify-between">
+                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
+                        <div class="heartBtn cursor-pointer">
+                            <img  src="assets/card-heart.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="mt-8">
+                        <h1 class="headline text-l font-bold">UK Railway COUNTER</h1>
+                        <p>Bangladesh Railway</p>
+
+                        <h1 class="num mt-4 text-3xl font-bold">887</h1>
+
+                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Travel</button>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-4 ">
+                        <button class="copyBtn cursor-pointer flex bg-gray-100 px-8 py-2 rounded-lg">
+                            <img src="assets/copy.svg" alt="">
+                            <span class="">Copy</span>
+                        </button>
+
+                        <button class="callBtn flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500 cursor-pointer">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- one card ends here -->
+
+
+                <!-- one card starts here -->
+                <div class="a-card w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
+
+                    <div class="flex justify-between">
+                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
+                        <div class="heartBtn cursor-pointer">
+                            <img  src="assets/card-heart.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="mt-8">
+                        <h1 class="headline text-l font-bold">UK Railway COUNTER</h1>
+                        <p>Bangladesh Railway</p>
+
+                        <h1 class="num mt-4 text-3xl font-bold">887</h1>
+
+                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Travel</button>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-4 ">
+                        <button class="copyBtn cursor-pointer flex bg-gray-100 px-8 py-2 rounded-lg">
+                            <img src="assets/copy.svg" alt="">
+                            <span class="">Copy</span>
+                        </button>
+
+                        <button class="callBtn flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500 cursor-pointer">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- one card ends here -->
+
+
+                <!-- one card starts here -->
+                <div class="a-card w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
+
+                    <div class="flex justify-between">
+                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
+                        <div class="heartBtn cursor-pointer">
+                            <img  src="assets/card-heart.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="mt-8">
+                        <h1 class="headline text-l font-bold">UK Railway COUNTER</h1>
+                        <p>Bangladesh Railway</p>
+
+                        <h1 class="num mt-4 text-3xl font-bold">887</h1>
+
+                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Travel</button>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-4 ">
+                        <button class="copyBtn cursor-pointer flex bg-gray-100 px-8 py-2 rounded-lg">
+                            <img src="assets/copy.svg" alt="">
+                            <span class="">Copy</span>
+                        </button>
+
+                        <button class="callBtn flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500 cursor-pointer">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- one card ends here -->
+
+
+
+                <!-- one card starts here -->
+                <div class="a-card w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
+
+                    <div class="flex justify-between">
+                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
+                        <div class="heartBtn cursor-pointer">
+                            <img  src="assets/card-heart.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="mt-8">
+                        <h1 class="headline text-l font-bold">UK Railway COUNTER</h1>
+                        <p>Bangladesh Railway</p>
+
+                        <h1 class="num mt-4 text-3xl font-bold">887</h1>
+
+                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Travel</button>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-4 ">
+                        <button class="copyBtn cursor-pointer flex bg-gray-100 px-8 py-2 rounded-lg">
+                            <img src="assets/copy.svg" alt="">
+                            <span class="">Copy</span>
+                        </button>
+
+                        <button class="callBtn flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500 cursor-pointer">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- one card ends here -->
+
+
+                <!-- one card starts here -->
+                <div class="a-card w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
+
+                    <div class="flex justify-between">
+                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
+                        <div class="heartBtn cursor-pointer">
+                            <img  src="assets/card-heart.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="mt-8">
+                        <h1 class="headline text-l font-bold">UK Railway COUNTER</h1>
+                        <p>Bangladesh Railway</p>
+
+                        <h1 class="num mt-4 text-3xl font-bold">887</h1>
+
+                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Travel</button>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-4 ">
+                        <button class="copyBtn cursor-pointer flex bg-gray-100 px-8 py-2 rounded-lg">
+                            <img src="assets/copy.svg" alt="">
+                            <span class="">Copy</span>
+                        </button>
+
+                        <button class="callBtn flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500 cursor-pointer">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- one card ends here -->
+
+
+                <!-- one card starts here -->
+                <div class="a-card w-80 h-80 bg-white border border-gray-100 rounded-3xl p-10">
+
+                    <div class="flex justify-between">
+                        <img class="w-9 h-9 bg-red-200 border-none rounded-4xl " src="assets/emergency.png" alt="">
+                        <div class="heartBtn cursor-pointer">
+                            <img  src="assets/card-heart.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="mt-8">
+                        <h1 class="headline text-l font-bold">UK Railway COUNTER</h1>
+                        <p>Bangladesh Railway</p>
+
+                        <h1 class="num mt-4 text-3xl font-bold">887</h1>
+
+                        <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-gray-50">Travel</button>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-4 ">
+                        <button class="copyBtn cursor-pointer flex bg-gray-100 px-8 py-2 rounded-lg">
+                            <img src="assets/copy.svg" alt="">
+                            <span class="">Copy</span>
+                        </button>
+
+                        <button class="callBtn flex justify-center items-center border border-green-500 px-8 py-2 rounded-lg bg-green-500 cursor-pointer">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- one card ends here -->
 
 
                 
@@ -394,7 +397,7 @@
 
                 <div  class="p-10 flex justify-between items-center">
                     <h1 class="text-xl">Call History</h1>
-                    <button class="flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-[#00A63E]">
+                    <button class="cursor-pointer flex items-center px-4 py-2 border border-gray-100 rounded-3xl bg-[#00A63E]">
                     <h1 id="clearBtn">Clear</h1>
                     </button>
                 </div>
